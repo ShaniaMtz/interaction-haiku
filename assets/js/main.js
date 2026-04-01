@@ -9,6 +9,7 @@ function randomize () {
     360}deg'
 
   //just the grid divs
+  divs.forEach(function (div) {
   let scale = randomNumber(.5, 1.2);
   let translateX = randomNumber(0, 50); 
   let translateY = randomNumber(0,20);
@@ -21,8 +22,9 @@ function randomize () {
     translateY = randomNumber(0, 80); 
   } 
 
-  div.style.transform = 'scale(${scale}) translate($
-  {translateX}%,${translateY}%) rotate(${rotate}deg)';
+  div.style.transform = 'scale(${scale}) translate($ {translateX}
+  %,${translateY}%) rotate(${rotate}deg)';
+ });
 
 }
 
