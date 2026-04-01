@@ -5,8 +5,7 @@ function randomize () {
   console.log(divs.length, "randomize!")
 
   //affects the whole grid
-  grid[0].style.transform = 'rotate(${Math.random() *
-    360}deg'
+  grid[0].style.transform = 'rotate(${Math.random() * 360}deg';
 
   //just the grid divs
   divs.forEach(function (div) {
